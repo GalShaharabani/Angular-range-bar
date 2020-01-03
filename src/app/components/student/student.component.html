@@ -1,0 +1,20 @@
+
+<h3>{{name}}</h3>
+<h3>volume={{volume}}</h3>
+<input type="range" class="form-control" value="5" min="0" max="10" step="1" [(ngModel)]="volume" #vol >
+<ng-container *ngIf="volume<=3; then greenTemplate; else redTemplate"></ng-container>
+<ng-template #greenTemplate>
+<app-green-square></app-green-square>
+</ng-template>
+<ng-template #redTemplate>
+    <ng-container *ngIf="volume>=7; then red2Template; else prefectTemplate"></ng-container>
+        <ng-template #red2Template>
+            <app-red-square></app-red-square>
+         </ng-template>
+         <ng-template #prefectTemplate>
+            <app-perfect-square></app-perfect-square>
+         </ng-template>
+    </ng-template>
+  
+
+

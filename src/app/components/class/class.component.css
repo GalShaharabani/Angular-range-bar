@@ -1,0 +1,21 @@
+.row{
+    text-align: center;
+    margin: auto;
+    
+}
+
+#row1{
+    background-color: lavender;
+}
+
+#row2{
+    background-color: lavenderblush;
+}
+
+#row3{
+    background-color: lightgray;
+}
+
+#row4{
+    background-color: rgb(235, 210, 250);
+}
